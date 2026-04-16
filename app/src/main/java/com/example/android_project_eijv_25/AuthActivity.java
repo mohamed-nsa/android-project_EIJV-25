@@ -21,6 +21,8 @@ import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 import com.google.firebase.auth.FirebaseUser;
 
+import java.util.Objects;
+
 public class AuthActivity extends AppCompatActivity {
 
     // ── Vues formulaire de connexion ──────────────────────────────────────────
@@ -44,6 +46,7 @@ public class AuthActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_auth);
+        Objects.requireNonNull(getSupportActionBar()).hide();
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -306,7 +309,6 @@ public class AuthActivity extends AppCompatActivity {
         Intent intent = new Intent(AuthActivity.this, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
-        finish();
     }
 
     // ── Utilitaires ───────────────────────────────────────────────────────────

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Couleur principale (orange-rouge comme dans la maquette) -->
-    <color name="primary">#E04020</color>
-    <color name="primary_dark">#C03010</color>
+    <color name="primary">#FF018786</color>
+    <color name="primary_dark">#FF018786</color>
 
     <!-- Arrière-plans -->
     <color name="background">#F5F5F5</color>

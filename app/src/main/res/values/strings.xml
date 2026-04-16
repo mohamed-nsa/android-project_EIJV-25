@@ -36,4 +36,10 @@
 <!--    <string name="app_name">android-project_EIJV-25</string>-->
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_maps">MapsActivity</string>
+
+    <string-array name="options_carte">
+        <item>Afficher ma position</item>
+        <item>Ajouter une activité</item>
+        <item>Supprimer une activité</item>
+    </string-array>
 </resources>
